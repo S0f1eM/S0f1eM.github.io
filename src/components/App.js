@@ -3,10 +3,12 @@ import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 //components
 import Header from '../components/menu/Header';
-import NotFound from '../components/NotFound'
-import Home from '../components/Home';
+import Home from '../components/home/Home';
 import Markdown from '../components/markdown/Markdown';
-import About from './About';
+import About from '../components/about/About';
+import ItemList from '../components/news/ItemList';
+import Footer from '../components/menu/Footer';
+
 
 const App = () => {
 	return (
@@ -16,9 +18,10 @@ const App = () => {
 				<Header />
 				<Route path="/" exact component={Home} />
 			    <Route path="/markdown" exact component={Markdown} />
+			    <Route path="/news" exact component={ItemList} />
 			    <Route path="/About" exact component={About} />
 			</BrowserRouter>
-		
+			<Footer />
 		</div>
 
 	)

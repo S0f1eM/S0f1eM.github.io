@@ -1,7 +1,5 @@
 import React from 'react';
 import { sampleMD } from './sampleMD'; 
-import { render } from 'react-dom';
-
 import marked from 'marked';
 
 
@@ -39,7 +37,6 @@ class Markdown extends React.Component {
 	}
 
 	render() {
-
 		return(
 
 		<div className="ui container grid">
