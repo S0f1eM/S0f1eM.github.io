@@ -34,7 +34,7 @@ npm install
 npm start
 ```
 
-##Author
+## Author
 
 * Sophie Marchand
  
