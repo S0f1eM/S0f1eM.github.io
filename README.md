@@ -34,12 +34,10 @@ npm install
 npm start
 ```
 
+
 ## Author
 
 * Sophie Marchand
  
 * Twitter *[@S0f1eM](https://twitter.com/S0f1eM)* 
 
-## Contributing 
-
-## Licence
