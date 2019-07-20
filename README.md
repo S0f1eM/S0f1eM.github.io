@@ -1,6 +1,16 @@
 # React-playground
 My react playground for training, testing, improving and have fun !
 
+github page issue: 
+/playground show a blank page. 
+We had to click Home on the menu to see the "good" page which url is https://s0f1em.github.io/.
+But if we directly go on https://s0f1em.github.io/, we had a 404. 
+Due to the folder structure of react or redux router? I work on it.
+
+website visible here : https://s0f1em.github.io/playground/
+
+
+
 ## Prerequisites 
 * npm
 * node
