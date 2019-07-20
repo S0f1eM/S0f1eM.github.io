@@ -17,7 +17,6 @@ const App = () => {
 		  <BrowserRouter>
 				<Header />
 				<Route path="/" exact component={Home} />
-				<Route path="/playground/" exact component={Home} />
 			    <Route path="/markdown" exact component={Markdown} />
 			    <Route path="/news" exact component={ItemList} />
 			    <Route path="/About" exact component={About} />
