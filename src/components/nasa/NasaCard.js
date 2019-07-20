@@ -3,7 +3,7 @@ import React from 'react';
 
 const NasaCard = props => {
 
-	const { title, url, hdurl, explanation, date, copyright, media_type } = props.data;
+	const { title, url, hdurl, explanation, media_type } = props.data;
 
 	
 	function renderContent() {
@@ -40,16 +40,14 @@ const NasaCard = props => {
 
 
   <div className="ui item">
-  	<h4>Nasa picture of the day</h4>
       <div className="ui segment">
 		<h5 className="title">{title}</h5>
+		<div className="ui divider"></div>
 
 			{renderContent() }
+					<div className="ui divider"></div>
 
-			<p>{explanation}</p>
-
-			<span>{date}, {copyright}</span>
-		
+			<p>{explanation}</p>		
 		</div>
 	</div>
 	)

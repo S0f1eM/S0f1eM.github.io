@@ -34,8 +34,7 @@ class ItemList extends React.Component {
 		        	<h3 className="ui header">{article.title}</h3>
 		        </a>
 		        <p>{article.description}</p>
-		        <p className="author">{article.user.name} - {article.user.username} 
-		        <a href={userTwitterAccount}><i className="twitter icon medium"></i></a></p>
+		        <p className="author">{article.user.name}   <a href={userTwitterAccount}> <i className="twitter icon medium"></i></a></p>
 		         
 		        <span className="ui label"><i className="olive tag icon"></i>{article.tag_list[0]}</span>
 		        <span className="ui label"><i className="green tag icon"></i>{article.tag_list[1]}</span>
@@ -55,8 +54,9 @@ class ItemList extends React.Component {
 	render() {
 		return (
 		<>
-		<h2 className="ui header">Last posts on DEV.to</h2>
 		<div className="ui segment">
+		<h2 className="ui header">Last posts on DEV.to</h2>
+		<div className="ui divider"></div>
 		<div>{this.renderList()}</div>
 		<div className="ui container">
 			<h4 className="ui link item"><a href="https://dev.to/"> More articles on Dev.to</a></h4>

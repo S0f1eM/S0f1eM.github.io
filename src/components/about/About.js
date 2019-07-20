@@ -11,7 +11,6 @@ const About = () => {
 						<Card/>
 
 						<div className="ten wide column">
-						<h2>What else...</h2>
 						</div>
 				</div>
 			</div>

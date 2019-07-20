@@ -39,7 +39,7 @@ class Markdown extends React.Component {
 	render() {
 		return(
 
-		<div className="ui container grid">
+		<div className="ui two column stackable grid">
 
 			<h2 className="ui header">Markdown Generator</h2>
 

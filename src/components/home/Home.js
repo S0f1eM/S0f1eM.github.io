@@ -11,7 +11,7 @@ const Home = () => {
 	return (
 		<>
 		
-		<div className="ui container grid">
+		<div className="ui two column stackable grid">
 
 				<div className="ten wide column">
 				<Intro />
@@ -20,8 +20,8 @@ const Home = () => {
 
 
 				<div className="five wide column">
-				   <NasaContainer />
 				   <Card />
+				   <NasaContainer />
 				</div>
 		</div>
 	</>
