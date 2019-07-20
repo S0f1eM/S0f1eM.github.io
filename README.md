@@ -1,8 +1,6 @@
 # React-playground
 My react playground for training, testing, improving and have fun !
 
-Live here : https://S0f1eM.github.io/React-playground
-
 ## Prerequisites 
 * npm
 * node
