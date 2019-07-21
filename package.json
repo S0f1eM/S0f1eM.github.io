@@ -1,9 +1,11 @@
 {
-  "name": "boilerplate",
+  "name": "my-react-playground",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "axios": "^0.19.0",
+    "lodash": "^4.17.14",
+    "marked": "^0.7.0",
     "npm": "^6.10.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -11,14 +13,17 @@
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "redux": "^4.0.4",
+    "redux-promise": "^0.6.0",
     "redux-thunk": "^2.3.0",
-    "thunk": "0.0.1"
+    "thunk": "0.0.1",
+    "why-did-you-update": "^1.0.6"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build&&gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,7 +40,8 @@
       "last 1 safari version"
     ]
   },
+  "homepage": "https://S0f1eM.github.io/playground",
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "gh-pages": "^2.0.1"
   }
 }
