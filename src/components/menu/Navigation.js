@@ -9,6 +9,7 @@ const Navigation = () => {
 		
 		<div className="ui fixed stackable menu">
 			  <Link to="/" className="active item">Home</Link> 
+			  <Link to="/playground" className="active item">Home</Link> 
 		  	<div className="right menu">
 		  		<Link to="/Markdown" className="item">Markdown Generator</Link>	
 		    	<div className="item">      
