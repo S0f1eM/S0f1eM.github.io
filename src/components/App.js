@@ -5,7 +5,6 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Header from '../components/menu/Header';
 import Home from '../components/home/Home';
 import Markdown from '../components/markdown/Markdown';
-import About from '../components/about/About';
 import ItemList from '../components/news/ItemList';
 import Footer from '../components/menu/Footer';
 
@@ -20,7 +19,6 @@ const App = () => {
 				<Route path="/playground" exact component={Home} />
 			    <Route path="/markdown" exact component={Markdown} />
 			    <Route path="/news" exact component={ItemList} />
-			    <Route path="/About" exact component={About} />
 			</BrowserRouter>
 			<Footer />
 		</div>

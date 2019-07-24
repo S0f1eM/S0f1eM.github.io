@@ -8,7 +8,7 @@ const Card = () => {
 		<div className="ui segment computer only">
     <div className="content">
       <div className="header">
-        <img src="https://pbs.twimg.com/profile_images/1150092962300403712/4uGgrm1W_400x400.jpg" alt="Sophie M." className="ui avatar right spaced image" />
+        <img src="https://pbs.twimg.com/profile_images/1152352433546379265/DB8JCSDS_200x200.jpg" alt="sophie" className="ui avatar right spaced image" />
         Sophie Marchand
       </div>
           <div className="ui divider"></div>
