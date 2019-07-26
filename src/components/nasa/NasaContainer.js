@@ -1,12 +1,13 @@
 import React from 'react';
 import NasaCard from './NasaCard';
 import { connect } from 'react-redux';
-import { fetchData } from '../../actions';
+import { fetchData } from '../../actions/data';
+
+
 
 class NasaContainer extends React.Component {
 
-	componentWillMount() {
-		
+	componentWillMount() {	
 		this.props.fetchData();
 	}
 

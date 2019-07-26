@@ -46,7 +46,7 @@ class Markdown extends React.Component {
 			<div className="ui row">
 
 				<div className="column eight wide ui form">
-				  <div class="field">
+				  <div className="field">
 					<textarea 
 						value={this.state.text}
 						rows="35"

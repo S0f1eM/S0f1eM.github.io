@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { fetchPosts } from '../../actions';
+import { fetchPosts } from '../../actions/data';
 
 
 class ItemList extends React.Component {
@@ -14,17 +14,18 @@ class ItemList extends React.Component {
 	
 	return this.props.posts.map( article => {
 
+//set the article image or a default image when no image is found
 		const articleIMG = `${article.cover_image}`;
 		const defaultIMG = 'https://via.placeholder.com/150x60.png?text=Hello+World';
+//create a const for leading to the twitter accout of the author
 		const userTwitterAccount = `https://twitter.com/
 									${article.user.twitter_username}
 									`;
 
-
 		return (
 
-		<>
 		<div className="ui list padded grid" key={article.id}>	    
+			
 			<div className="ui small floated image">
 		    	<img src={ article.cover_image ? articleIMG : defaultIMG } alt="illustration" />
 		    </div>
@@ -34,19 +35,18 @@ class ItemList extends React.Component {
 		        	<h3 className="ui header">{article.title}</h3>
 		        </a>
 		        <p>{article.description}</p>
-		        <p className="author">{article.user.name}   <a href={userTwitterAccount}> <i className="twitter icon medium"></i></a></p>
+		        <p className="author">{article.user.name} <a href={userTwitterAccount}> <i className="twitter icon medium"></i></a></p>
 		         
 		        <span className="ui label"><i className="olive tag icon"></i>{article.tag_list[0]}</span>
 		        <span className="ui label"><i className="green tag icon"></i>{article.tag_list[1]}</span>
 		    </div>
+		<div className="ui divider"></div>
 
 		</div>
-		<div className="ui divider"></div>
-		</>
-
 
 		);
-	}).slice(0,8);
+//load just the 5 first articles of the array fetch from the api
+	}).slice(0,5);
 
 };
 	
@@ -54,7 +54,7 @@ class ItemList extends React.Component {
 	render() {
 		return (
 		<>
-		<div className="ui segment">
+		<div>
 		<h2 className="ui header">Last posts on DEV.to</h2>
 		<div className="ui divider"></div>
 		<div>{this.renderList()}</div>

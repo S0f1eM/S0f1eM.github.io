@@ -1,13 +1,14 @@
 import { SIGN_IN, SIGN_OUT } from '../actions/types';
 
-
+//define a initial state to null to avoid error at first rendering
 const INITIAL_STATE = {
 	isSignedIn: null,
 	userId: null
 }
 
-export default (state=INITIAL_STATE, action) => {
 
+export default (state = INITIAL_STATE, action) => {
+//switch connexion state when the action.type is changed 
 	switch (action.type) {
 		case SIGN_IN:
 			return  {...state, isSignedIn: true, userId: action.payload };

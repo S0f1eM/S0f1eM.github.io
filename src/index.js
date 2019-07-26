@@ -8,6 +8,7 @@ import reducers from './reducers';
 import promise from 'redux-promise';
 import './css/App.css';
 
+
 const store = createStore(reducers, applyMiddleware(thunk, promise));
 
 ReactDOM.render(
