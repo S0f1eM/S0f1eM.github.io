@@ -3,11 +3,13 @@ import React from 'react';
 
 const NasaCard = props => {
 
-	const { title, url, hdurl, explanation, media_type } = props.data;
+//destructuring the data object from the api
+	const { title, url, hdurl, media_type } = props.data;
 
 	
 	function renderContent() {
-		
+
+//switch button in order to be able to render the video or the photo depending on the media type
 		switch(media_type) {
 
 			case('video'):
@@ -40,14 +42,11 @@ const NasaCard = props => {
 
 
   <div className="ui item">
-      <div className="ui segment">
-		<h5 className="title">{title}</h5>
-		<div className="ui divider"></div>
+      <div>
+		<h5 className="title">NASA image of the day : {title}</h5>
 
 			{renderContent() }
-					<div className="ui divider"></div>
 
-			<p>{explanation}</p>		
 		</div>
 	</div>
 	)
