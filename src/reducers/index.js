@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 import PostsReducer from './PostsReducer';
-import NasaReducer from './nasa_reducer';
+import NasaReducer from './nasaReducer';
 import authReducer from './authReducer';
 
 //define all the reducers for the store

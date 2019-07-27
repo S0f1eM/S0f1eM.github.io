@@ -23,4 +23,4 @@ const mapStateToProps = state => {
 }
 
 
-export default connect(mapStateToProps, {fetchData })(NasaContainer);
+export default connect(mapStateToProps, { fetchData })(NasaContainer);
