@@ -17,10 +17,9 @@ const Home = () => {
 				   <NasaContainer />
 				</div>
 
-					<div className="ten wide column">
+				<div className="ten wide column">
 				<ItemList />
 				</div>
-
 		</div>
 	</>
 	)

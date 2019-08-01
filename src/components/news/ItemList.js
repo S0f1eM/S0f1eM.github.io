@@ -26,6 +26,7 @@ class ItemList extends React.Component {
 
 		<div className="ui list padded grid" key={article.id}>	    
 			
+		<div className="item">
 			<div className="ui small floated image">
 		    	<img src={ article.cover_image ? articleIMG : defaultIMG } alt="illustration" />
 		    </div>
@@ -40,12 +41,13 @@ class ItemList extends React.Component {
 		        <span className="ui label"><i className="olive tag icon"></i>{article.tag_list[0]}</span>
 		        <span className="ui label"><i className="green tag icon"></i>{article.tag_list[1]}</span>
 		    </div>
-		<div className="ui divider"></div>
+		    	<div className="ui divider"></div>
 
 		</div>
 
+	    </div>
+
 		);
-//load just the 5 first articles of the array fetch from the api
 	}).slice(0,5);
 
 };
