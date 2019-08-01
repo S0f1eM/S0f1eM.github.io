@@ -1,7 +1,7 @@
 # React-playground
 My react playground for training, testing, improving and have fun !
 
-website visible here : https://s0f1em.github.io/playground/
+website visible here : https://sophie-react-playground.netlify.com/
 
 
 
