@@ -1,19 +1,6 @@
-import devtonews from '../apis/devtonews';
 import axios from 'axios';
-import { FETCH_POSTS, FETCH_DATA } from '../actions/types';
+import { FETCH_DATA } from '../actions/types';
 
-
-//fetch post from DEV.TO API
-export const fetchPosts = () => async dispatch => {
-	
-    const response = await devtonews.get('/articles');
-
-	dispatch({ 
-		type: FETCH_POSTS, 
-		payload: response.data 
-	});
-
-}
 
 
 //fetch data from image random NASA API
@@ -28,3 +15,5 @@ export const fetchData = () => {
 		payload: NasaRequest
 	}
 }
+
+

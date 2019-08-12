@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Suspense  } from 'react';
 import NasaContainer from '../../components/nasa/NasaContainer';
-import ItemList from '../../components/news/ItemList';
 import Card from './Card';
 
+const ItemList = React.lazy( () => import('../../components/news/ItemList') );
 
 const Home = () => {
 
@@ -16,10 +16,13 @@ const Home = () => {
 				   <Card />
 				   <NasaContainer />
 				</div>
-
-				<div className="ten wide column">
-				<ItemList />
+			    <div className="ten wide column">
+				<Suspense fallback={<div>Loading...</div>} >
+				   <ItemList />
+				 </Suspense>
+				}
 				</div>
+			
 		</div>
 	</>
 	)
