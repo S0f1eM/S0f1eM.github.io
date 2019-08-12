@@ -20,7 +20,6 @@ const Home = () => {
 				<Suspense fallback={<div>Loading...</div>} >
 				   <ItemList />
 				 </Suspense>
-				}
 				</div>
 			
 		</div>
