@@ -4,7 +4,7 @@
 
 My react playground for training, testing, improving and have fun !
 
-website visible here : https://sophie-react-playground.netlify.com/
+website visible here : https://sophie-react-on.netlify.com/
 
 
 ## Prerequisites 
