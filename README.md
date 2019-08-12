@@ -1,9 +1,10 @@
 # React-playground 
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/39acef99-9da3-40b2-97fa-3e0770e8b9c1/deploy-status)](https://app.netlify.com/sites/sophie-react-playground/deploys)
+
 My react playground for training, testing, improving and have fun !
 
 website visible here : https://sophie-react-playground.netlify.com/
-
 
 
 ## Prerequisites 
