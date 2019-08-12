@@ -1,4 +1,4 @@
-import React, { Suspense  } from 'react';
+import React from 'react';
 import NasaContainer from '../../components/nasa/NasaContainer';
 import Card from './Card';
 
@@ -17,10 +17,7 @@ const Home = () => {
 				   <NasaContainer />
 				</div>
 			    <div className="ten wide column">
-				<Suspense fallback={<div>Loading...</div>} >
 				   <ItemList />
-				 </Suspense>
-				}
 				</div>
 			
 		</div>

@@ -48,7 +48,7 @@ class ItemList extends React.Component {
 	    </div>
 
 		);
-	}).slice(0,6);
+	}).slice(0,7);
 
 };
 	
