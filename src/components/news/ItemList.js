@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { fetchPosts } from '../../actions/data';
+import { fetchPosts } from '../../actions/apiDevto';
 
 
 class ItemList extends React.Component {
@@ -48,7 +48,7 @@ class ItemList extends React.Component {
 	    </div>
 
 		);
-	}).slice(0,8);
+	}).slice(0,6);
 
 };
 	

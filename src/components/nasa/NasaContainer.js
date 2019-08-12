@@ -1,9 +1,8 @@
-import React from 'react';
-import NasaCard from './NasaCard';
+import React, { Suspense } from 'react';
 import { connect } from 'react-redux';
-import { fetchData } from '../../actions/data';
+import { fetchData } from '../../actions/apiNasa';
 
-
+const NasaCard = React.lazy( () => import('./NasaCard') );
 
 class NasaContainer extends React.Component {
 
@@ -13,7 +12,9 @@ class NasaContainer extends React.Component {
 
 	render() {
 		return (
+		<Suspense fallback={<div>Loading...</div>} >
 			<NasaCard data={ this.props.astronomy } />
+		</Suspense>
 		 )
 	}
 }
