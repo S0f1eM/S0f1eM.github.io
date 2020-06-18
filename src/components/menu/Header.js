@@ -9,7 +9,6 @@ const Header = () => {
 			  <Link to="/playground" className="active item">Home</Link> 
 		  	<div className="right menu">
 		  		<Link to="/Markdown" className="item">Markdown Generator</Link>	
-            	<Link to="/ImageSearch" className="item">Images Search</Link>	
 		  </div>
 		</div>
 		</>
