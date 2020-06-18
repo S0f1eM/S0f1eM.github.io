@@ -5,7 +5,6 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Header from '../components/menu/Header';
 import Markdown from '../components/markdown/Markdown';
 import Footer from '../components/menu/Footer';
-import ImageSearch from '../components/imageSearch/index';
 
 
 const Home = lazy( () => import('../components/home/Home'));
@@ -19,7 +18,6 @@ const App = () => {
 				<Header />
 				<Route path="/" exact component={Home} />
 				<Route path="/playground" exact component={Home} />
-				<Route path="/imageSearch" exact component={ImageSearch} />
 			    <Route path="/markdown" exact component={Markdown} />
 			  </Suspense>
 			</BrowserRouter>
