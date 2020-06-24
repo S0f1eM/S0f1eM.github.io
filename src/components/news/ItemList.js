@@ -16,7 +16,7 @@ class ItemList extends React.Component {
 
 //set the article image or a default image when no image is found
 		const articleIMG = `${article.cover_image}`;
-		const defaultIMG = 'https://via.placeholder.com/150x60.png?text=Hello+World';
+		const defaultIMG = 'https://via.placeholder.com/150x60.png?text=no+image';
 //create a const for leading to the twitter accout of the author
 		const userTwitterAccount = `https://twitter.com/
 									${article.user.twitter_username}
@@ -48,7 +48,7 @@ class ItemList extends React.Component {
 	    </div>
 
 		);
-	}).slice(0,6);
+	}).slice(0,4);
 
 };
 	

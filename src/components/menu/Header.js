@@ -7,9 +7,7 @@ const Header = () => {
 		<>		
 		<div className="ui fixed stackable menu">
 			  <Link to="/playground" className="active item">Home</Link> 
-		  	<div className="right menu">
-		  		<Link to="/Markdown" className="item">Markdown Generator</Link>	
-		    </div>
+		  	  <Link to="/Markdown" className="item">Markdown Generator</Link>	
 		</div>
 		</>
 		)

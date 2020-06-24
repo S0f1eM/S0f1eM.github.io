@@ -12,14 +12,15 @@ const Home = () => {
 		
 		<div className="ui two column stackable grid">
 
-				<div className="five wide column">
-				   <Card />
-				   <NasaContainer />
-				</div>
 			    <div className="ten wide column">
 				<Suspense fallback={<div>Loading...</div>} >
 				   <ItemList />
 				 </Suspense>
+				</div>
+
+				<div className="five wide column">
+				   <Card />
+				   <NasaContainer />
 				</div>
 			
 		</div>
