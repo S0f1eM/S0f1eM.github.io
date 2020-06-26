@@ -18,7 +18,7 @@ const Home = () => {
 				 </Suspense>
 				</div>
 
-				<div className="five wide column">
+				<div className="six wide column">
 				   <Card />
 				   <NasaContainer />
 				</div>

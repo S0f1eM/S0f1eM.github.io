@@ -1,24 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 const Card = () => {
-  const intro = 'This is my React Playground for training and testing.';
 
 	return (
 
 		<div className="ui computer only">
       
       <div className="header">
-        
-          <h3>Hello, I am Sophie</h3>
-
-          <div className="ui divider"></div>
-          
-          <p className="description">{intro}</p>
-        
-          <div className="ui divider"></div>
-
+                          
       </div>
+        <button className="ui labeled icon huge button teal" style={{margin:"10% 0"}}><i className="code icon"></i>
+          <Link to="/Markdown" className="ui centered aligned header" style={{color:"#fff"}}>Markdown Generator</Link> 
+        </button>
 
     </div>
 	)
