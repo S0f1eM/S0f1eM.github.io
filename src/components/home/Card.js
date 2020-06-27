@@ -14,7 +14,6 @@ const Card = () => {
         <button className="ui labeled icon huge button teal" style={{margin:"10% 0"}}><i className="code icon"></i>
           <Link to="/Markdown" className="ui centered aligned header" style={{color:"#fff"}}>Markdown Generator</Link> 
         </button>
-
     </div>
 	)
 }
