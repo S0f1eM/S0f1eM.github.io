@@ -38,30 +38,32 @@ class Markdown extends React.Component {
 
 	render() {
 		return(
+		<div className="ui container">
 
-		<div className="ui two column stackable grid">
+			<div className="ui two column stackable grid">
 
-			<h2 className="ui header">Markdown Generator</h2>
+				<h2 className="ui header">Markdown Generator</h2>
 
-			<div className="ui row">
+				<div className="ui row">
 
-				<div className="column eight wide ui form">
-				  <div className="field">
-					<textarea 
-						value={this.state.text}
-						rows="35"
-						onChange={ (e) => this.editText(e) } 
-					/>
+					<div className="column eight wide ui form">
+					  <div className="field">
+						<textarea 
+							value={this.state.text}
+							rows="35"
+							onChange={ (e) => this.editText(e) } 
+						/>
+						</div>
 					</div>
-				</div>
 
-				<div className="column six wide">
-					<div dangerouslySetInnerHTML={this.renderText(this.state.text)} />
+					<div className="column six wide">
+						<div dangerouslySetInnerHTML={this.renderText(this.state.text)} />
+					</div>
+
 				</div>
 
 			</div>
-
-			</div>
+		</div>
 
 		)
 	}

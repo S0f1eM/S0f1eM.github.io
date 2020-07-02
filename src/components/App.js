@@ -1,30 +1,30 @@
-//React
 import React, { lazy, Suspense } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 //components
-import Header from '../components/menu/Header';
+import Header from '../components/elements/Header';
 import Markdown from '../components/markdown/Markdown';
-import Footer from '../components/menu/Footer';
+import Footer from '../components/elements/Footer';
 
 
-const Home = lazy( () => import('../components/home/Home'));
+const Home = lazy( () => import('../components/Home'));
 
 const App = () => {
 	return (
 
-		<div className="ui main container" style={{marginTop: 5 + 'em'}}>
-		  <BrowserRouter>
-		  	<Suspense fallback={<div>Loading...</div>} >
-				<Header />
-				<Route path="/" exact component={Home} />
-				<Route path="/playground" exact component={Home} />
-			    <Route path="/markdown" exact component={Markdown} />
-			  </Suspense>
-			</BrowserRouter>
-			<Footer />
-		</div>
+		<>
+		  	<BrowserRouter>
+		  		<Header />
+		  	  		<Suspense fallback={<div>Loading...</div>} >
+						<Route path="/" exact component={Home} />
+						<Route path="/playground" exact component={Home} />
+			    		<Route path="/markdown" exact component={Markdown} />
+			  		</Suspense>
+			  	<Footer />
+		  	</BrowserRouter>
+		</>
 
 	)
 };
 
 export default App;
+

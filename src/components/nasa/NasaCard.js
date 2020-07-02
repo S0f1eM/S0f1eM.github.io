@@ -43,11 +43,9 @@ const NasaCard = props => {
 
   <div className="ui item">
       <div>
-		<h5 className="title">NASA image of the day : {title}</h5>
-
+		<h5 className="title" style={{fontFamily:"Pacifico", margin:'2em auto'}}>Image of the day : {title}</h5>
 			{renderContent() }
-
-		</div>
+	  </div>
 	</div>
 	)
 }

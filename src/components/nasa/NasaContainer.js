@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 import { connect } from 'react-redux';
-import { fetchData } from '../../actions/apiNasa';
+import { fetchData } from '../../actions';
 
 const NasaCard = React.lazy( () => import('./NasaCard') );
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { fetchPosts } from '../../actions/apiDevto';
+import { fetchPosts } from '../../actions';
 
 
 class ItemList extends React.Component {
@@ -13,17 +13,14 @@ class ItemList extends React.Component {
 
 	
 	return this.props.posts.map( article => {
-
 //set the article image or a default image when no image is found
 		const articleIMG = `${article.cover_image}`;
 		const defaultIMG = '';
-//create a const for leading to the twitter accout of the author
 		const userTwitterAccount = `https://twitter.com/
 									${article.user.twitter_username}
 									`;
 
 		return (
-
 		<div className="ui piled segment" key={article.id}>	    
 			
 			<div className="item">
@@ -32,34 +29,31 @@ class ItemList extends React.Component {
 			    </div>
 			    
 			    <div className="content">
-			        <a href={article.url}><h3 className="ui header">{article.title}</h3></a>
+			        <a href={article.url}>
+			        	<h3 className="ui header">{article.title}</h3>
+			        </a>
 			        <p>{article.description}</p>
-			        <p className="author"><a href={userTwitterAccount}> <i className="twitter icon medium"></i></a> {article.user.name}</p>
+			        <p className="author">
+			        	<a href={userTwitterAccount}> <i className="twitter icon medium"></i></a> 
+			        	{article.user.name}
+			        </p>
 			         
 			        <span className="ui label"><i className="olive tag icon"></i>{article.tag_list[0]}</span>
 			        <span className="ui label"><i className="green tag icon"></i>{article.tag_list[1]}</span>
 			    </div>
-
 			</div>
-
 		</div>
 		);
 	}).slice(0,3);
 
 };
 	
-
 	render() {
 		return (
 		<>
 			<div className="column">
-				<h2 className="ui center aligned header">Last posts on DEV.to</h2>
-					<div>{this.renderList()}</div>
-					<div className="ui container">
-						<h4 className="ui link item" style={{marginTop:"5%"}}>
-							<a href="https://dev.to/"> More articles on Dev.to</a>
-						</h4>
-					</div>
+				<h2 className="ui center aligned header">Last posts on <a href="https://dev.to/">DEV.to</a></h2>
+					<div>{this.renderList()}</div>					
 			</div>
 		</>
 		)
