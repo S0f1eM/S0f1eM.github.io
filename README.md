@@ -1,9 +1,13 @@
 # React-playground 
 
-My react playground for training, testing, improving and have fun !
+## My react playground for training, testing, improving and have fun !
+* Implemente a video player.
+* Use of NASA API with axios.
+* Use of dev.to API.
+* Create a markdown generator.
+* Use of react-redux.
 
 website visible here : https://sophie-react-playground.surge.sh
-
 
 
 ## Prerequisites 
