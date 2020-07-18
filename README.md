@@ -1,20 +1,34 @@
 # React-playground 
 
-## My react playground for training, testing, improving and have fun !
-* Implemente a video player.
-* Use of NASA API with axios.
-* Use of dev.to API.
-* Create a markdown generator.
-* Use of react-redux.
+### Table Of Contents
+* [Introduction](#intro)
+* [Links](#links)
+* [Features](#features)
+* [Prerequisites](#prerequisites)
+* [Dependencies](#dependencies)
+* [Installation](#setup)
 
-website visible here : https://sophie-react-playground.surge.sh
 
+## Introduction<a name="intro"></a>
 
-## Prerequisites 
+This is a website made with react I used to use for training and testing new stuffs...
+
+## Links<a name="links"></a>
+
+* *[My react playground](https://sophie-react-playground.surge.sh)*
+
+## features<a name="features"></a>
+
+* Use of a video player with react-player.
+* Use of NASA API with axios to show one image a day.
+* Use of dev.to API to show last articles.
+* Create a markdown generator to play with markdown on the website.
+
+## Prerequisites<a name="prerequisites"></a> 
 * npm
 * node
 
-## Dependencies 
+## Dependencies<a name="dependencies"></a>
 
 ```
     "axios": "^0.19.0",
@@ -31,21 +45,17 @@ website visible here : https://sophie-react-playground.surge.sh
 
 ```
 
-## Installation
+## Installation<a name="setup"></a>
+
+Get the repository or download it.
+At the root folder run npm install npm.
 
 ```bash
-npm install
+npm install npm
 ```
-
-## Usage
-```bash
-npm start
-```
-
 
 ## Author
 
 * Sophie Marchand
- 
 * Twitter *[@S0f1eM](https://twitter.com/S0f1eM)* 
 
