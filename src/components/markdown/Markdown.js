@@ -42,8 +42,6 @@ class Markdown extends React.Component {
 
 			<div className="ui two column stackable grid">
 
-				<h2 className="ui header">Markdown Generator</h2>
-
 				<div className="ui row">
 
 					<div className="column eight wide ui form">

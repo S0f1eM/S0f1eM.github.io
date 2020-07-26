@@ -15,34 +15,39 @@ class ItemList extends React.Component {
 	return this.props.posts.map( article => {
 //set the article image or a default image when no image is found
 		const articleIMG = `${article.cover_image}`;
-		const defaultIMG = '';
+		const defaultIMG = '/default.jpg';
 		const userTwitterAccount = `https://twitter.com/
 									${article.user.twitter_username}
 									`;
 
-		return (
-		<div className="ui piled segment" key={article.id}>	    
-			
-			<div className="item">
-				<div className="ui rounded image" style={{margin:'4% 0 8%'}}>
-			    	<img src={ article.cover_image ? articleIMG : defaultIMG } alt={ article.cover_image ? "illustration" : "" } />
-			    </div>
-			    
-			    <div className="content">
-			        <a href={article.url}>
-			        	<h3 className="ui header">{article.title}</h3>
-			        </a>
-			        <p>{article.description}</p>
-			        <p className="author">
-			        	<a href={userTwitterAccount}> <i className="twitter icon medium"></i></a> 
-			        	{article.user.name}
-			        </p>
-			         
-			        <span className="ui label"><i className="olive tag icon"></i>{article.tag_list[0]}</span>
-			        <span className="ui label"><i className="green tag icon"></i>{article.tag_list[1]}</span>
-			    </div>
+		return (		
+			<div className="item itemlistDev" key={article.id}>
+
+				<div className="ui segment">
+					<div className="ui rounded image" style={{margin:'4% 0 8%'}}>
+						<a href={article.url}>
+				    		<img src={ article.cover_image ? articleIMG : defaultIMG } 
+				    		     alt="" />
+				   		</a>
+				    </div>
+				    
+				    <div className="ui content">
+				        <a href={article.url}>
+				        	<h3 className="ui header">{article.title}</h3>
+				        </a>
+				        <p>{article.description}</p>
+				        <p className="author">
+				        	<a href={userTwitterAccount}> 
+				        		<i className="twitter icon medium"></i>
+				        		{article.user.name}
+				        	</a> 
+				        </p>
+				         
+				        <span className="ui label"><i className="olive tag icon"></i>{article.tag_list[0]}</span>
+				        <span className="ui label"><i className="green tag icon"></i>{article.tag_list[1]}</span>
+				    </div>
+				</div>
 			</div>
-		</div>
 		);
 	}).slice(0,3);
 
@@ -51,9 +56,13 @@ class ItemList extends React.Component {
 	render() {
 		return (
 		<>
-			<div className="column">
-				<h2 className="ui center aligned header">Last posts on <a href="https://dev.to/">DEV.to</a></h2>
-					<div>{this.renderList()}</div>					
+			<div className="ui column" style={{}}>
+				<h2 className="ui center aligned header" style={{margin: '2em 0'}}>
+					Last posts on <a href="https://dev.to/">DEV.to</a>
+				</h2>
+				<div className="ui very relaxed list horizontal">  
+					{this.renderList()}
+				</div>					
 			</div>
 		</>
 		)

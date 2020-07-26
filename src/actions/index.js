@@ -14,7 +14,6 @@ export const fetchPosts = () => async dispatch => {
 
 }
 
-
 //fetch data from image random NASA API
 export const fetchData = () => {
 
@@ -28,7 +27,4 @@ export const fetchData = () => {
 		payload: NasaRequest
 	}
 }
-
-
-
 

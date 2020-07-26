@@ -3,13 +3,11 @@ import React from 'react';
 
 const NasaCard = props => {
 
-//destructuring the data object from the api
 	const { title, url, hdurl, media_type } = props.data;
-
+	const urlNasa = 'https://www.nasa.gov/multimedia/imagegallery/iotd.html';
 	
 	function renderContent() {
 
-//switch button in order to be able to render the video or the photo depending on the media type
 		switch(media_type) {
 
 			case('video'):
@@ -33,22 +31,18 @@ const NasaCard = props => {
 
 			default: 
 				return null
-
 		}
 	}
 
-
 	return (
-
-
-  <div className="ui item">
-      <div>
-		<h5 className="title" style={{fontFamily:"Pacifico", margin:'2em auto'}}>Image of the day : {title}</h5>
-			{renderContent() }
-	  </div>
-	</div>
+	    <div className="ui item">
+			<h3 className="title" style={{margin:'2em auto'}}>
+			    <a href={urlNasa} target="_blank" rel="noopener noreferrer">Image of the day</a> : <br/>
+			    {title}
+			</h3>
+				{renderContent()}
+		</div>
 	)
 }
-
 
 export default NasaCard;

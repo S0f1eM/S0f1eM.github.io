@@ -5,7 +5,7 @@ body {
 
 .player-wrapper {
   position: relative;
-  padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+  padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
 }
  
 .react-player {
@@ -14,6 +14,9 @@ body {
   left: 0;
 }
 
+.item.itemlistDev {
+	width: 30%;
+}
 
 @media screen and (max-width: 768px) {
 	.ui.segment:first-child {

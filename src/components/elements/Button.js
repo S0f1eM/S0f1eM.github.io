@@ -8,7 +8,7 @@ const Button = props => {
 	return (
 
 	<div className="ui computer only">
-        <button className={className} style={{margin:"10% 0"}}><i className="code icon"></i>
+        <button role="button" className={className} style={{margin:"10% 0"}}><i className="code icon"></i>
         	<Link to={props.url} className="ui centered aligned header" style={{color:"teal"}}>{props.title}</Link> 
         </button>
     </div>
