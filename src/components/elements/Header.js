@@ -9,7 +9,7 @@ const Header = () => {
 				<div className="ui large inverted pointing secondary menu">
 					<div className="ui container">
 						<a className="item" href="/">Home</a>
-							<a className="item" href="/Markdown">Markdown Generator</a>
+							<a className="item" href="/Markdown">Markdown</a>
 						<div className="right item">
 							<a  href="https://twitter.com/S0f1eM" 
 					             target="_blank" 
