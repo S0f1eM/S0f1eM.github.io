@@ -38,7 +38,7 @@ class Markdown extends React.Component {
 
 	render() {
 		return(
-		<div className="ui container">
+		<div className="ui container" style={{margin:"4em 0"}}>
 
 			<div className="ui two column stackable grid">
 

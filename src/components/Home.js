@@ -8,27 +8,25 @@ const ItemList = React.lazy( () => import('../components/elements/ItemList') );
 const Home = () => {
 
 	return (
-	<div className="ui main container" style={{margin: "5em 0"}}>
-		<div className="ui row">		
-			<Video />
-		</div>
+	<div className="ui main container" style={{margin: "3em 0"}}>
 
-		<div className="ui centered row">		
+		<div className="ui stackable two column grid">
 			<Suspense fallback={<div>Loading...</div>}>
 				<ItemList />
 			</Suspense>
 		</div>
+		
 		<div className="ui row" style={{textAlign:'center'}}>
-			<div className="column">
-				<div className="ui two column stackable grid">
-					<div className="ui column">
-						<Link to="/Markdown" title="Markdown Generator">
-							<h2 style={{margin:'2em auto'}}>Markdown Generator</h2>
-						</Link>				
-					</div>
-					<div className="ui column">
-						<NasaContainer />
-					</div>
+			<div className="ui two column stackable grid">
+
+				<div className="ui column">
+				<Link to="/Markdown" title="Markdown Generator">
+						<h2 style={{margin:'2em auto'}}>Markdown Generator</h2>
+					</Link>	
+					<Video />
+				</div>
+				<div className="ui column">
+					<NasaContainer />
 				</div>
 			</div>
 		</div>	
